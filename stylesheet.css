@@ -1,0 +1,376 @@
+/*Body Set up*/
+@import url('https://fonts.googleapis.com/css?family=Quattrocento|Shadows+Into+Light|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day&display=swap');
+
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #EFF0F4;
+}
+
+/*Homepage Navigation*/
+header {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	width: 100%;
+	box-shadow: 1px 0px 10px;
+	background-color: #EFF0F4;
+	margin-top: 0;
+	z-index: 9999;
+}
+nav ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+	margin: 0 auto;
+	list-style: none;
+	align-items: center;
+	justify-items: center;
+	font-size: 1.25em;
+}
+nav a{
+	text-decoration: none;
+	line-height: 1.5 em;
+	color: #635D61;
+	padding: 25px;
+	font-family: 'Quattrocento', serif;
+}
+nav a:hover {
+	color: #FFAC81;
+	padding: 1em;
+}
+.nav1 {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+.nav2 {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+.nav3 {
+	grid-column: 4/5;
+	grid-row: 1/2;
+}
+.nav4 {
+	grid-column: 5/6;
+	grid-row: 1/2;
+}
+.logo {
+	grid-column: 3/4;
+	height: 125px;
+
+}
+.logo:hover {
+	background-color: none;
+}
+
+/*pattern banner*/
+.pattern-banner {
+	left: 0;
+	right: 0;
+	width: 100%;
+	overflow: hidden;
+}
+.knot-band {
+	width: 100%;
+	opacity: 85%;
+}
+.banner-text {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	background-color:rgba(227, 236, 245, .3);
+	padding: 50px;
+	color: #635D61;
+	font-family: 'Dawning of a New Day', cursive;
+	font-size: 4em;
+}
+button {
+	background-color: rgba(255, 193, 135, .7);
+	border: 1px solid #FFC187;
+	border-radius: 3em;
+	color: #E3ECF5;
+	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+	padding: 0.5em;
+	font-family: 'Quattrocento', sans-serif;
+	font-size: .67em;
+}
+button:hover {
+	color: white;
+	outline: 0;
+	border: 1px solid #FFAA5A;
+	box-shadow: 0 0 40px 40px rgba(255, 170, 90, 1) inset;
+}
+
+/*tutorial boxes*/
+h1 {
+	text-align: center;
+	font-family: 'Dawning of a New Day', cursive;
+	font-size: 4em;
+	color: #635D61;
+}
+.tutorial {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 20px;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+.tutorial-card {
+	position: relative;
+	text-align: center;
+	height: 350px;
+	width: 350px;
+	overflow: hidden;
+	box-shadow: 0px 3px 10px;
+}
+.tutorial-card h3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	size: 4em;
+	font-family: 'Quattrocento', sans-serif;
+	color: #635D61;
+	background-color: rgba(255, 193, 135, .3);
+	padding: 35px;
+
+}
+.tutorial-card img {
+	height: 375px;
+	float: right;
+	opacity: 60%;
+}
+.tutorial-card:hover {
+	transform: scale(1.05);
+}
+.tutorial-card h3:hover {
+	background-color: rgba(255, 170, 90, .8);
+	padding: 35px;
+}
+.tutorial-card-blank {
+	position: relative;
+	text-align: center;
+	height: 350px;
+	width: 350px;
+	overflow: hidden;
+	box-shadow: 0px 3px 10px;
+	background-color: white;
+}
+.tutorial-card-blank h3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	size: 4em;
+	font-family: 'Quattrocento', sans-serif;
+	color: #635D61;
+	background-color: rgba(255, 193, 135, .3);
+	padding: 35px;
+}
+.tutorial-card-blank img {
+	height: 375px;
+	float: right;
+	opacity: 20%;
+}
+.tutorial-card-blank:hover {
+	transform: scale(1.05);
+}
+
+/*About Me*/
+.aboutme {
+	background-color: #D4C6C0;
+	padding: 30px;
+}
+
+.aboutme p{
+	font-size: 1.5em;
+	font-family: 'Quattrocento', sans-serif;
+	padding-left: 15%;
+	padding-right: 15%;
+	color: #635D61; 
+}
+
+/*Tutorial1*/
+.begin-title {
+	background-color: #AAC0AA;
+	width: 100%;
+	height: 500px;
+	margin-top: 0;
+	margin-bottom: 100px;
+	padding-left: 0;
+}
+.begin-title h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #FEF6E6;
+	border: 2px solid #FEF6E6;
+	padding: 25px;
+	width: 75%;
+
+}
+p{
+	font-family: 'Quattrocento', sans-serif;
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 100px;
+}
+h5 {
+	font-family: 'Quattrocento', sans-serif;
+	font-size: 2em;
+	padding-left: 5%;
+}
+
+.cards-materials {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+}
+.material-card {
+	margin:auto;
+	width: 400px;
+	height: 550px;
+	border-radius: 3px;
+	box-shadow: 1px 1px 4px 1px #888;
+	background-color: white; 
+	overflow: hidden;
+}
+.material-card img{
+	width: 100%;
+}
+.material-card h3{
+	text-align: center;
+	font-family: 'Quattrocento', sans-serif;
+}
+.material-card p {
+	padding: 5%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.15em;
+	text-align: left;
+}
+
+ol {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5em;
+	padding-left: 10%;
+}
+
+
+/*Footer*/
+footer{ 
+	display: grid;
+	grid-template-rows: repeat(3,1fr);
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+}
+
+.social-media {
+	display: inline-grid;
+	grid-template-columns: repeat(5, 100px);
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+.social-media img{
+	box-shadow: 1px 0px 5px #888;
+	border-radius: 50%;
+	background-color: #635D61;
+}
+.siteplan {
+	font-family: 'Quattrocento', sans-serif;
+	font-size: 24px;
+}
+.email-list p {
+	font-family: 'Quattrocento', sans-serif;
+	font-size: 24px;
+}
+input {
+	font-family: 'Quattrocento', sans-serif;
+	color: #635D61;
+	width: 250px;
+	height: 24px; 
+}
+
+@media screen and (max-width: 550px) { 
+    .home-grid {
+    display: block;
+    } 
+} 
+
+/*Pattern Page*/
+
+.banner h1 {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	padding: 50px;
+	color: #FFD25A;
+	font-family: 'Dawning of a New Day', cursive;
+	font-size: 6em;
+	text-shadow: 1px 0px 4px #888;
+}
+.banner img {
+	width: 100%;
+}
+.pattern-content {
+	width: 90%;
+	background-color: white;
+	margin: auto;
+	box-shadow: 0px 3px 10px #888;
+	margin-top: 0px;
+	overflow: hidden;
+}
+.intro-p {
+	padding: 5%;
+}
+.intro-p p{
+	text-align: left;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5em;
+}
+form {
+	padding: 5%;
+	background-color: #D4C6C0;
+	width: 100%;
+}
+form h3 {
+	font-family: 'Quattrocento', sans-serif;
+	text-align: center;
+}
+form label {
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 20px;
+	text-align: center;
+}
+form p{
+	text-align: left;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1em;
+	padding-left: 1%;
+}
+.pattern {
+	padding: 5%;
+}
+.pattern p{
+	text-align: left;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-top: 50px;
+}
+.tutorial-gif {
+	float: right;
+	box-shadow: 0px 3px 7px; 
+	margin-left: 5%;
+}
+.bind-off-gif {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 10px;
+}
+.tutorial-gif-2 {
+	width: 100%;
+	box-shadow: 0px 3px 7px;
+}
